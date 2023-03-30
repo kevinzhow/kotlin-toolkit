@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://github.com/readium/kotlin-toolkit/2.2.0/migration-guide/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.9">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.2.11">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.120efc48.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.8c5ef100.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.9647289d.min.css">
@@ -214,6 +214,21 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -250,6 +265,120 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#unreleased" class="md-nav__link">
+    Unreleased
+  </a>
+  
+    <nav class="md-nav" aria-label="Unreleased">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maven-central" class="md-nav__link">
+    Maven Central
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#230" class="md-nav__link">
+    2.3.0
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#decorationextras" class="md-nav__link">
+    Decoration.extras
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pdf-support" class="md-nav__link">
+    PDF support
+  </a>
+  
+    <nav class="md-nav" aria-label="PDF support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#migrating-to-the-pdfiumandroid-adapter" class="md-nav__link">
+    Migrating to the PdfiumAndroid adapter
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-the-http-server" class="md-nav__link">
+    Removing the HTTP server
+  </a>
+  
+    <nav class="md-nav" aria-label="Removing the HTTP server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#serving-app-assets" class="md-nav__link">
+    Serving app assets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edge-tap-navigation" class="md-nav__link">
+    Edge tap navigation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrading-to-the-new-preferences-api" class="md-nav__link">
+    Upgrading to the new Preferences API
+  </a>
+  
+    <nav class="md-nav" aria-label="Upgrading to the new Preferences API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deprecation-of-usersettingsuipreset" class="md-nav__link">
+    Deprecation of userSettingsUIPreset
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#221" class="md-nav__link">
+    2.2.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#210" class="md-nav__link">
     2.1.0
   </a>
@@ -267,6 +396,380 @@
           <li class="md-nav__item">
   <a href="#using-a-fork" class="md-nav__link">
     Using a fork
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200" class="md-nav__link">
+    2.0.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200-beta2" class="md-nav__link">
+    2.0.0-beta.2
+  </a>
+  
+    <nav class="md-nav" aria-label="2.0.0-beta.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#serving-publications-with-the-http-server" class="md-nav__link">
+    Serving publications with the HTTP server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lcp-changes" class="md-nav__link">
+    LCP changes
+  </a>
+  
+    <nav class="md-nav" aria-label="LCP changes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#replacing-orgjodatimedatetime-with-javautildate" class="md-nav__link">
+    Replacing org.joda.time.DateTime with java.util.Date
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revamped-loan-renew-api" class="md-nav__link">
+    Revamped loan renew API
+  </a>
+  
+    <nav class="md-nav" aria-label="Revamped loan renew API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-material-design-apps" class="md-nav__link">
+    For Material Design apps
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200-beta1" class="md-nav__link">
+    2.0.0-beta.1
+  </a>
+  
+    <nav class="md-nav" aria-label="2.0.0-beta.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#replacing-format-by-mediatype" class="md-nav__link">
+    Replacing Format by MediaType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replacing-file-by-fileasset" class="md-nav__link">
+    Replacing File by FileAsset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#support-for-display-cutouts" class="md-nav__link">
+    Support for display cutouts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200-alpha2" class="md-nav__link">
+    2.0.0-alpha.2
+  </a>
+  
+    <nav class="md-nav" aria-label="2.0.0-alpha.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#replacing-the-parsers-with-streamer" class="md-nav__link">
+    Replacing the Parsers with Streamer
+  </a>
+  
+    <nav class="md-nav" aria-label="Replacing the Parsers with Streamer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opening-a-publication" class="md-nav__link">
+    Opening a Publication
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parsing-a-readium-web-publication-manifest" class="md-nav__link">
+    Parsing a Readium Web Publication Manifest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-feedback" class="md-nav__link">
+    Error Feedback
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-usage" class="md-nav__link">
+    Advanced Usage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-a-publications-resources" class="md-nav__link">
+    Accessing a Publication's Resources
+  </a>
+  
+    <nav class="md-nav" aria-label="Accessing a Publication's Resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#container-is-deprecated" class="md-nav__link">
+    Container is Deprecated
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extracting-publication-covers" class="md-nav__link">
+    Extracting Publication Covers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observing-a-navigators-current-locator" class="md-nav__link">
+    Observing a Navigator's Current Locator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lcp-and-other-drms" class="md-nav__link">
+    LCP and Other DRMs
+  </a>
+  
+    <nav class="md-nav" aria-label="LCP and Other DRMs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opening-an-lcp-protected-publication" class="md-nav__link">
+    Opening an LCP Protected Publication
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customizing-the-passphrase-dialog" class="md-nav__link">
+    Customizing the Passphrase Dialog
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presenting-a-protected-publication-with-a-navigator" class="md-nav__link">
+    Presenting a Protected Publication with a Navigator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-an-lcp-license-information" class="md-nav__link">
+    Accessing an LCP License Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acquiring-a-publication-from-an-lcpl" class="md-nav__link">
+    Acquiring a Publication from an LCPL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supporting-other-drms" class="md-nav__link">
+    Supporting Other DRMs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#introducing-try" class="md-nav__link">
+    Introducing Try
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attempt-to-invoke-virtual-method-androidcontentsharedpreferences-androidcontentcontextgetsharedpreferencesjavalangstring-int-on-a-null-object-reference" class="md-nav__link">
+    Attempt to invoke virtual method 'android.content.SharedPreferences android.content.Context.getSharedPreferences(java.lang.String, int)' on a null object reference
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lcp-publications-are-blank-or-lcpl-are-not-imported" class="md-nav__link">
+    LCP publications are blank or LCPL are not imported
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lcp-publications-are-opening-but-not-decrypted" class="md-nav__link">
+    LCP publications are opening but not decrypted
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elcpdialogauthentication-no-valid-sender-was-passed-to-lcpdialogauthenticationretrievepassphrase-make-sure-it-is-an-activity-a-fragment-or-a-view" class="md-nav__link">
+    E/LcpDialogAuthentication: No valid [sender] was passed to LcpDialogAuthentication::retrievePassphrase(). Make sure it is an Activity, a Fragment or a View.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#illegalargumentexception-the-provided-publication-is-restricted-check-that-any-drm-was-properly-unlocked-using-a-content-protection" class="md-nav__link">
+    IllegalArgumentException: The provided publication is restricted. Check that any DRM was properly unlocked using a Content Protection.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200-alpha1" class="md-nav__link">
+    2.0.0-alpha.1
+  </a>
+  
+    <nav class="md-nav" aria-label="2.0.0-alpha.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#imports" class="md-nav__link">
+    Imports
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#immutability-of-shared-models" class="md-nav__link">
+    Immutability of Shared Models
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#last-read-location" class="md-nav__link">
+    Last Read Location
+  </a>
+  
+    <nav class="md-nav" aria-label="Last Read Location">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#restoring-the-last-location" class="md-nav__link">
+    Restoring the Last Location
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observing-the-current-location" class="md-nav__link">
+    Observing the Current Location
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publication" class="md-nav__link">
+    Publication
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#locator" class="md-nav__link">
+    Locator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server" class="md-nav__link">
+    Server
   </a>
   
 </li>
@@ -295,18 +798,122 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_2">
+        <label class="md-nav__link" for="__nav_3">
+          User Guides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="User Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          User Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/navigator-preferences/" class="md-nav__link">
+        Navigator preferences
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/epub-fonts/" class="md-nav__link">
+        EPUB font families
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/pdf/" class="md-nav__link">
+        PDF support
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/tts/" class="md-nav__link">
+        Text-to-speech
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/content/" class="md-nav__link">
+        Extracting the content of a publication
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
           API Reference
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="API Reference" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
+        <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           API Reference
         </label>
@@ -318,7 +925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../readium/shared/" class="md-nav__link">
+      <a href="../readium/shared/index.md" class="md-nav__link">
         Shared
       </a>
     </li>
@@ -332,7 +939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../readium/streamer/" class="md-nav__link">
+      <a href="../readium/streamer/index.md" class="md-nav__link">
         Streamer
       </a>
     </li>
@@ -346,7 +953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../readium/navigator/" class="md-nav__link">
+      <a href="../readium/navigator/index.md" class="md-nav__link">
         Navigator
       </a>
     </li>
@@ -360,7 +967,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../readium/opds/" class="md-nav__link">
+      <a href="../readium/opds/index.md" class="md-nav__link">
         OPDS
       </a>
     </li>
@@ -374,9 +981,112 @@
   
   
     <li class="md-nav__item">
-      <a href="../readium/lcp/" class="md-nav__link">
+      <a href="../readium/lcp/index.md" class="md-nav__link">
         LCP
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6">
+          Adapters
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Adapters" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          Adapters
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../readium/navigator-media2/index.md" class="md-nav__link">
+        Navigator media2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../readium/adapters/pdfium/pdfium-document/index.md" class="md-nav__link">
+        PDFium Document
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../readium/adapters/pdfium/pdfium-navigator/index.md" class="md-nav__link">
+        PDFium Navigator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../readium/adapters/pspdfkit/pspdfkit-document/index.md" class="md-nav__link">
+        PSPDFKit Document
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../readium/adapters/pspdfkit/pspdfkit-navigator/index.md" class="md-nav__link">
+        PSPDFKit Navigator
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -415,6 +1125,120 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#unreleased" class="md-nav__link">
+    Unreleased
+  </a>
+  
+    <nav class="md-nav" aria-label="Unreleased">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maven-central" class="md-nav__link">
+    Maven Central
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#230" class="md-nav__link">
+    2.3.0
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#decorationextras" class="md-nav__link">
+    Decoration.extras
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pdf-support" class="md-nav__link">
+    PDF support
+  </a>
+  
+    <nav class="md-nav" aria-label="PDF support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#migrating-to-the-pdfiumandroid-adapter" class="md-nav__link">
+    Migrating to the PdfiumAndroid adapter
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-the-http-server" class="md-nav__link">
+    Removing the HTTP server
+  </a>
+  
+    <nav class="md-nav" aria-label="Removing the HTTP server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#serving-app-assets" class="md-nav__link">
+    Serving app assets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edge-tap-navigation" class="md-nav__link">
+    Edge tap navigation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrading-to-the-new-preferences-api" class="md-nav__link">
+    Upgrading to the new Preferences API
+  </a>
+  
+    <nav class="md-nav" aria-label="Upgrading to the new Preferences API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deprecation-of-usersettingsuipreset" class="md-nav__link">
+    Deprecation of userSettingsUIPreset
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#221" class="md-nav__link">
+    2.2.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#210" class="md-nav__link">
     2.1.0
   </a>
@@ -432,6 +1256,380 @@
           <li class="md-nav__item">
   <a href="#using-a-fork" class="md-nav__link">
     Using a fork
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200" class="md-nav__link">
+    2.0.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200-beta2" class="md-nav__link">
+    2.0.0-beta.2
+  </a>
+  
+    <nav class="md-nav" aria-label="2.0.0-beta.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#serving-publications-with-the-http-server" class="md-nav__link">
+    Serving publications with the HTTP server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lcp-changes" class="md-nav__link">
+    LCP changes
+  </a>
+  
+    <nav class="md-nav" aria-label="LCP changes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#replacing-orgjodatimedatetime-with-javautildate" class="md-nav__link">
+    Replacing org.joda.time.DateTime with java.util.Date
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revamped-loan-renew-api" class="md-nav__link">
+    Revamped loan renew API
+  </a>
+  
+    <nav class="md-nav" aria-label="Revamped loan renew API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-material-design-apps" class="md-nav__link">
+    For Material Design apps
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200-beta1" class="md-nav__link">
+    2.0.0-beta.1
+  </a>
+  
+    <nav class="md-nav" aria-label="2.0.0-beta.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#replacing-format-by-mediatype" class="md-nav__link">
+    Replacing Format by MediaType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replacing-file-by-fileasset" class="md-nav__link">
+    Replacing File by FileAsset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#support-for-display-cutouts" class="md-nav__link">
+    Support for display cutouts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200-alpha2" class="md-nav__link">
+    2.0.0-alpha.2
+  </a>
+  
+    <nav class="md-nav" aria-label="2.0.0-alpha.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#replacing-the-parsers-with-streamer" class="md-nav__link">
+    Replacing the Parsers with Streamer
+  </a>
+  
+    <nav class="md-nav" aria-label="Replacing the Parsers with Streamer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opening-a-publication" class="md-nav__link">
+    Opening a Publication
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parsing-a-readium-web-publication-manifest" class="md-nav__link">
+    Parsing a Readium Web Publication Manifest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-feedback" class="md-nav__link">
+    Error Feedback
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-usage" class="md-nav__link">
+    Advanced Usage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-a-publications-resources" class="md-nav__link">
+    Accessing a Publication's Resources
+  </a>
+  
+    <nav class="md-nav" aria-label="Accessing a Publication's Resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#container-is-deprecated" class="md-nav__link">
+    Container is Deprecated
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extracting-publication-covers" class="md-nav__link">
+    Extracting Publication Covers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observing-a-navigators-current-locator" class="md-nav__link">
+    Observing a Navigator's Current Locator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lcp-and-other-drms" class="md-nav__link">
+    LCP and Other DRMs
+  </a>
+  
+    <nav class="md-nav" aria-label="LCP and Other DRMs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opening-an-lcp-protected-publication" class="md-nav__link">
+    Opening an LCP Protected Publication
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customizing-the-passphrase-dialog" class="md-nav__link">
+    Customizing the Passphrase Dialog
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presenting-a-protected-publication-with-a-navigator" class="md-nav__link">
+    Presenting a Protected Publication with a Navigator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-an-lcp-license-information" class="md-nav__link">
+    Accessing an LCP License Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acquiring-a-publication-from-an-lcpl" class="md-nav__link">
+    Acquiring a Publication from an LCPL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supporting-other-drms" class="md-nav__link">
+    Supporting Other DRMs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#introducing-try" class="md-nav__link">
+    Introducing Try
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attempt-to-invoke-virtual-method-androidcontentsharedpreferences-androidcontentcontextgetsharedpreferencesjavalangstring-int-on-a-null-object-reference" class="md-nav__link">
+    Attempt to invoke virtual method 'android.content.SharedPreferences android.content.Context.getSharedPreferences(java.lang.String, int)' on a null object reference
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lcp-publications-are-blank-or-lcpl-are-not-imported" class="md-nav__link">
+    LCP publications are blank or LCPL are not imported
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lcp-publications-are-opening-but-not-decrypted" class="md-nav__link">
+    LCP publications are opening but not decrypted
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elcpdialogauthentication-no-valid-sender-was-passed-to-lcpdialogauthenticationretrievepassphrase-make-sure-it-is-an-activity-a-fragment-or-a-view" class="md-nav__link">
+    E/LcpDialogAuthentication: No valid [sender] was passed to LcpDialogAuthentication::retrievePassphrase(). Make sure it is an Activity, a Fragment or a View.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#illegalargumentexception-the-provided-publication-is-restricted-check-that-any-drm-was-properly-unlocked-using-a-content-protection" class="md-nav__link">
+    IllegalArgumentException: The provided publication is restricted. Check that any DRM was properly unlocked using a Content Protection.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200-alpha1" class="md-nav__link">
+    2.0.0-alpha.1
+  </a>
+  
+    <nav class="md-nav" aria-label="2.0.0-alpha.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#imports" class="md-nav__link">
+    Imports
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#immutability-of-shared-models" class="md-nav__link">
+    Immutability of Shared Models
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#last-read-location" class="md-nav__link">
+    Last Read Location
+  </a>
+  
+    <nav class="md-nav" aria-label="Last Read Location">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#restoring-the-last-location" class="md-nav__link">
+    Restoring the Last Location
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observing-the-current-location" class="md-nav__link">
+    Observing the Current Location
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publication" class="md-nav__link">
+    Publication
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#locator" class="md-nav__link">
+    Locator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server" class="md-nav__link">
+    Server
   </a>
   
 </li>
@@ -461,11 +1659,190 @@
 
 <h1 id="migration-guide">Migration Guide<a class="headerlink" href="#migration-guide" title="Permanent link">&para;</a></h1>
 <p>All migration steps necessary in reading apps to upgrade to major versions of the Kotlin Readium toolkit will be documented in this file.</p>
+<h2 id="unreleased">Unreleased<a class="headerlink" href="#unreleased" title="Permanent link">&para;</a></h2>
+<h3 id="maven-central">Maven Central<a class="headerlink" href="#maven-central" title="Permanent link">&para;</a></h3>
+<p>Readium is now distributed with <a href="https://search.maven.org/search?q=g:org.readium.kotlin-toolkit">Maven Central</a>. You must update your Gradle configuration.</p>
+<div class="highlight"><pre><span></span><code><span class="w">allprojects {</span>
+<span class="w"> </span>   repositories {<span class="w"></span>
+<span class="gd">-       maven { url &#39;https://jitpack.io&#39; }</span><span class="w"></span>
+<span class="gi">+       mavenCentral()</span><span class="w"></span>
+<span class="w"> </span>   }<span class="w"></span>
+<span class="w">}</span>
+</code></pre></div>
+<p>The group ID of the Readium modules is now <code>org.readium.kotlin-toolkit</code>, for instance:</p>
+<div class="highlight"><pre><span></span><code><span class="n">dependencies</span> <span class="o">{</span>
+    <span class="n">implementation</span> <span class="s2">&quot;org.readium.kotlin-toolkit:readium-shared:$readium_version&quot;</span>
+    <span class="n">implementation</span> <span class="s2">&quot;org.readium.kotlin-toolkit:readium-streamer:$readium_version&quot;</span>
+    <span class="n">implementation</span> <span class="s2">&quot;org.readium.kotlin-toolkit:readium-navigator:$readium_version&quot;</span>
+    <span class="n">implementation</span> <span class="s2">&quot;org.readium.kotlin-toolkit:readium-opds:$readium_version&quot;</span>
+    <span class="n">implementation</span> <span class="s2">&quot;org.readium.kotlin-toolkit:readium-lcp:$readium_version&quot;</span>
+<span class="o">}</span>
+</code></pre></div>
+<h2 id="230">2.3.0<a class="headerlink" href="#230" title="Permanent link">&para;</a></h2>
+<h3 id="decorationextras"><code>Decoration.extras</code><a class="headerlink" href="#decorationextras" title="Permanent link">&para;</a></h3>
+<p><code>Decoration.extras</code> is now a <code>Map&lt;String, Any&gt;</code> instead of <code>Bundle</code>. You will need to update your app if you were storing custom data in <code>extras</code>, for example:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span> <span class="nv">decoration</span> <span class="o">=</span> <span class="n">Decoration</span><span class="p">(...,</span>
+    <span class="n">extras</span> <span class="o">=</span> <span class="n">mapOf</span><span class="p">(</span><span class="s">&quot;id&quot;</span> <span class="n">to</span> <span class="n">id</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="kd">val</span> <span class="nv">id</span> <span class="o">=</span> <span class="n">decoration</span><span class="p">.</span><span class="na">extras</span><span class="o">[</span><span class="s">&quot;id&quot;</span><span class="o">]</span> <span class="k">as?</span> <span class="kt">Long</span>
+</code></pre></div>
+<h3 id="pdf-support">PDF support<a class="headerlink" href="#pdf-support" title="Permanent link">&para;</a></h3>
+<p>The PDF navigator got refactored to support arbitrary third-party PDF engines. As a consequence, <a href="https://github.com/barteksc/PdfiumAndroid">PdfiumAndroid</a> (the open source PDF renderer we previously used) was extracted into its own adapter package. <strong>This is a breaking change</strong> if you were supporting PDF in your application.</p>
+<p>This new version ships with an adapter for the commercial PDF engine <a href="https://pspdfkit.com/">PSPDFKit</a>, see the instructions under <code>readium/adapter/pspdfkit</code> to set it up.</p>
+<p>If you wish to keep using the open source library <a href="https://github.com/barteksc/PdfiumAndroid">PdfiumAndroid</a>, you need to migrate your app.</p>
+<h4 id="migrating-to-the-pdfiumandroid-adapter">Migrating to the PdfiumAndroid adapter<a class="headerlink" href="#migrating-to-the-pdfiumandroid-adapter" title="Permanent link">&para;</a></h4>
+<p>First, add the new dependency in your app's <code>build.gradle</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="n">dependencies</span> <span class="o">{</span>
+    <span class="n">implementation</span> <span class="s2">&quot;com.github.readium.kotlin-toolkit:readium-adapter-pdfium:$readium_version&quot;</span>
+    <span class="c1">// Or, if you need only the parser but not the navigator:</span>
+    <span class="n">implementation</span> <span class="s2">&quot;com.github.readium.kotlin-toolkit:readium-adapter-pdfium-document:$readium_version&quot;</span>
+<span class="o">}</span>
+</code></pre></div>
+<p>Then, setup the <code>Streamer</code> with the adapter factory: </p>
+<div class="highlight"><pre><span></span><code><span class="n">Streamer</span><span class="p">(...,</span>
+    <span class="n">pdfFactory</span> <span class="o">=</span> <span class="n">PdfiumDocumentFactory</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+<span class="p">)</span>
+</code></pre></div>
+<p>Finally, provide the new <code>PdfiumEngineProvider</code> to <code>PdfNavigatorFactory</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span> <span class="nv">navigatorFactory</span> <span class="o">=</span> <span class="n">PdfNavigatorFactory</span><span class="p">(</span>
+    <span class="n">publication</span> <span class="o">=</span> <span class="n">publication</span><span class="p">,</span>
+    <span class="n">pdfEngineProvider</span> <span class="o">=</span> <span class="n">PdfiumEngineProvider</span><span class="p">()</span>
+<span class="p">)</span>
+<span class="kd">override</span> <span class="kd">fun</span> <span class="nf">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">:</span> <span class="n">Bundle?)</span> <span class="p">{</span>
+    <span class="n">childFragmentManager</span><span class="p">.</span><span class="na">fragmentFactory</span> <span class="o">=</span>
+        <span class="n">navigatorFactory</span><span class="p">.</span><span class="na">createFragmentFactory</span><span class="p">(...)</span>
+    <span class="k">super</span><span class="p">.</span><span class="na">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="removing-the-http-server">Removing the HTTP server<a class="headerlink" href="#removing-the-http-server" title="Permanent link">&para;</a></h3>
+<p>The local HTTP server is not needed anymore to render EPUB publications. You can safely drop all occurrences of <code>Server</code> from your project and remove the <code>baseUrl</code> parameter when calling <code>EpubNavigatorFragment.createFactory()</code>.</p>
+<p>:warning: You <strong>must</strong> adopt the new Preferences API to remove the HTTP server, as described in the next section of this migration guide.</p>
+<h4 id="serving-app-assets">Serving app assets<a class="headerlink" href="#serving-app-assets" title="Permanent link">&para;</a></h4>
+<p>If you were serving <code>assets/</code> files (e.g. fonts or scripts) to the EPUB resources, you can still do so with the new API.</p>
+<p>First, declare the <code>assets/</code> paths that will be available to EPUB resources when creating the navigator. You can use <a href="https://developer.android.com/reference/android/os/PatternMatcher#PATTERN_SIMPLE_GLOB">simple glob patterns</a> to allow multiple assets in one go, e.g. <code>fonts/.*</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="n">EpubNavigatorFragment</span><span class="p">.</span><span class="na">createFactory</span><span class="p">(</span>
+    <span class="p">...,</span>
+    <span class="n">config</span> <span class="o">=</span> <span class="n">EpubNavigatorFragment</span><span class="p">.</span><span class="na">Configuration</span><span class="p">(</span>
+        <span class="n">servedAssets</span> <span class="o">=</span> <span class="n">listOf</span><span class="p">(</span>
+            <span class="s">&quot;fonts/.*&quot;</span><span class="p">,</span>
+            <span class="s">&quot;annotation-icon.svg&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+</code></pre></div>
+<p>Then, use the base URL <code>https://readium/assets/</code> to fetch your app assets from the web views. For example:</p>
+<p><code>https://readium/assets/annotation-icon.svg</code></p>
+<h4 id="edge-tap-navigation">Edge tap navigation<a class="headerlink" href="#edge-tap-navigation" title="Permanent link">&para;</a></h4>
+<p>After removing the HTTP server, tapping on the edge of the screen will not turn pages anymore. If you wish to keep this behavior, you can add it in your app by implementing <code>VisualNavigator.Listener.onTap()</code>. An instance of <code>EdgeTapNavigation</code> can help to compute the page turns by taking into account the publication reading progression and custom thresholds. <a href="https://github.com/readium/kotlin-toolkit/blob/9b84fc42c3db34c0462e972b6a08afc0de3afc95/test-app/src/main/java/org/readium/r2/testapp/reader/VisualReaderFragment.kt#L515-L522">See an example in the test app</a>.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">override</span> <span class="kd">fun</span> <span class="nf">onTap</span><span class="p">(</span><span class="n">point</span><span class="p">:</span> <span class="n">PointF</span><span class="p">):</span> <span class="kt">Boolean</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="nv">navigated</span> <span class="o">=</span> <span class="n">EdgeTapNavigation</span><span class="p">(</span><span class="n">navigator</span><span class="p">).</span><span class="na">onTap</span><span class="p">(</span><span class="n">point</span><span class="p">,</span> <span class="n">requireView</span><span class="p">())</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">navigated</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">toggleAppBar</span><span class="p">()</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="kc">true</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="upgrading-to-the-new-preferences-api">Upgrading to the new Preferences API<a class="headerlink" href="#upgrading-to-the-new-preferences-api" title="Permanent link">&para;</a></h3>
+<p>The 2.3.0 release introduces a brand new user preferences API for configuring the EPUB and PDF Navigators. This new API is easier and safer to use. To learn how to integrate it in your app, <a href="../guides/navigator-preferences/">please refer to the user guide</a>.</p>
+<p>If you integrated the EPUB navigator from a previous version, follow these steps to migrate:</p>
+<ol>
+<li>Get familiar with <a href="../guides/navigator-preferences/#overview">the concepts of this new API</a>.</li>
+<li>Remove the local HTTP server from your app, <a href="#removing-the-http-server">as explained in the previous section</a>.</li>
+<li>Remove the whole <a href="https://github.com/readium/kotlin-toolkit/blob/f132e541a1d2c290a83974fb017efb352e0f825f/test-app/src/main/java/org/readium/r2/testapp/epub/UserSettings.kt"><code>UserSettings.kt</code></a> file from your app, if you copied it from the Test App.</li>
+<li>Adapt your user settings interface to the new API using preferences editors. The <a href="https://github.com/readium/kotlin-toolkit/tree/develop/test-app/src/main/java/org/readium/r2/testapp/reader/preferences">Test App</a> and the <a href="../guides/navigator-preferences/#build-a-user-settings-interface">user guide</a> contain examples using Jetpack Compose.</li>
+<li><a href="../guides/navigator-preferences/#save-and-restore-the-user-preferences">Handle the persistence of the user preferences</a>. The settings are not stored in the <code>SharedPreferences</code> with name <code>org.readium.r2.settings</code> anymore. Instead, you are responsible for persisting and restoring the user preferences as you see fit (e.g. as a JSON file).<ul>
+<li>If you want to migrate the legacy <code>SharedPreferences</code> settings, you can use the helper <code>EpubPreferences.fromLegacyEpubSettings()</code> which will create a new <code>EpubPreferences</code> object after translating the existing user settings.</li>
+</ul>
+</li>
+<li>Make sure you <a href="../guides/navigator-preferences/#setting-the-initial-navigator-preferences-and-app-defaults">restore the stored user preferences</a> when initializing the EPUB navigator.</li>
+</ol>
+<p>Please refer to the following table for the correspondence between legacy settings and new ones.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Legacy</strong></th>
+<th><strong>New</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>APPEARANCE_REF</code></td>
+<td><code>theme</code></td>
+</tr>
+<tr>
+<td><code>COLUMN_COUNT_REF</code></td>
+<td><code>columnCount</code> (reflowable) and <code>spread</code> (fixed-layout)</td>
+</tr>
+<tr>
+<td><code>FONT_FAMILY_REF</code></td>
+<td><code>fontFamily</code></td>
+</tr>
+<tr>
+<td><code>FONT_OVERRIDE_REF</code></td>
+<td>N/A (handled automatically)</td>
+</tr>
+<tr>
+<td><code>FONT_SIZE_REF</code></td>
+<td><code>fontSize</code></td>
+</tr>
+<tr>
+<td><code>LETTER_SPACING_REF</code></td>
+<td><code>letterSpacing</code></td>
+</tr>
+<tr>
+<td><code>LINE_HEIGHT_REF</code></td>
+<td><code>lineHeight</code></td>
+</tr>
+<tr>
+<td><code>PAGE_MARGINS_REF</code></td>
+<td><code>pageMargins</code></td>
+</tr>
+<tr>
+<td><code>PUBLISHER_DEFAULT_REF</code></td>
+<td><code>publisherStyles</code></td>
+</tr>
+<tr>
+<td><code>reader_brightness</code></td>
+<td>N/A (out of scope for Readium)</td>
+</tr>
+<tr>
+<td><code>SCROLL_REF</code></td>
+<td><code>overflow</code> (<code>scrolled</code>)</td>
+</tr>
+<tr>
+<td><code>TEXT_ALIGNMENT_REF</code></td>
+<td><code>textAlign</code></td>
+</tr>
+<tr>
+<td><code>WORD_SPACING_REF</code></td>
+<td><code>wordSpacing</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="deprecation-of-usersettingsuipreset">Deprecation of <code>userSettingsUIPreset</code><a class="headerlink" href="#deprecation-of-usersettingsuipreset" title="Permanent link">&para;</a></h4>
+<p><code>publication.userSettingsUIPreset</code> is now deprecated, but you might still have this code in your application:</p>
+<div class="highlight"><pre><span></span><code><span class="n">publication</span><span class="p">.</span><span class="na">userSettingsUIPreset</span><span class="o">[</span><span class="n">ReadiumCSSName</span><span class="p">.</span><span class="na">ref</span><span class="p">(</span><span class="n">SCROLL_REF</span><span class="p">)</span><span class="o">]</span> <span class="o">=</span> <span class="kc">true</span>
+</code></pre></div>
+<p>You can remove it, as the support for screen readers will be added directly to the navigator in a coming release. However if you want to keep it, here is the equivalent with the new API:</p>
+<div class="highlight"><pre><span></span><code><span class="n">navigator</span><span class="p">.</span><span class="na">submitPreferences</span><span class="p">(</span><span class="n">currentPreferences</span><span class="p">.</span><span class="na">copy</span><span class="p">(</span><span class="n">scroll</span> <span class="o">=</span> <span class="kc">true</span><span class="p">))</span>
+</code></pre></div>
+<h2 id="221">2.2.1<a class="headerlink" href="#221" title="Permanent link">&para;</a></h2>
+<p>This hotfix release fixes an issue <a href="https://github.com/readium/kotlin-toolkit/issues/286">pulling a third-party dependency (NanoHTTPD) from JitPack</a>.</p>
+<p>After upgrading, make sure to remove the dependency to NanoHTTPD from your app's <code>build.gradle</code> file before building:</p>
+<div class="highlight"><pre><span></span><code><span class="gd">-implementation(&quot;com.github.edrlab.nanohttpd:nanohttpd:master-SNAPSHOT&quot;) {</span><span class="w"></span>
+<span class="gd">-    exclude(group = &quot;org.parboiled&quot;)</span><span class="w"></span>
+<span class="gd">-}</span><span class="w"></span>
+<span class="gd">-implementation(&quot;com.github.edrlab.nanohttpd:nanohttpd-nanolets:master-SNAPSHOT&quot;) {</span><span class="w"></span>
+<span class="gd">-    exclude(group = &quot;org.parboiled&quot;)</span><span class="w"></span>
+<span class="gd">-}</span><span class="w"></span>
+</code></pre></div>
+<p>:point_up: If you are stuck with an older version of Readium, you can <a href="https://github.com/readium/kotlin-toolkit/issues/286#issuecomment-1283408861">use this workaround in your root <code>build.gradle</code></a>, as an alternative.</p>
 <h2 id="210">2.1.0<a class="headerlink" href="#210" title="Permanent link">&para;</a></h2>
 <p>With this new release, we migrated all the <a href="https://github.com/readium/?q=r2-kotlin"><code>r2-*-kotlin</code></a> repositories to <a href="https://github.com/readium/r2-testapp-kotlin/issues/461">a single <code>kotlin-toolkit</code> repository</a>.</p>
 <h3 id="using-jitpack">Using JitPack<a class="headerlink" href="#using-jitpack" title="Permanent link">&para;</a></h3>
 <p>If you are integrating Readium with the JitPack Maven repository, the same Readium modules are available as before. Just replace the former dependency notations with the new ones, <a href="../README.md">per the README</a>.</p>
-<div class="codehilite"><pre><span></span><code>dependencies {
+<div class="highlight"><pre><span></span><code>dependencies {
     implementation &quot;com.github.readium.kotlin-toolkit:readium-shared:$readium_version&quot;
     implementation &quot;com.github.readium.kotlin-toolkit:readium-streamer:$readium_version&quot;
     implementation &quot;com.github.readium.kotlin-toolkit:readium-navigator:$readium_version&quot;
@@ -473,43 +1850,46 @@
     implementation &quot;com.github.readium.kotlin-toolkit:readium-lcp:$readium_version&quot;
 }
 </code></pre></div>
-
 <h3 id="using-a-fork">Using a fork<a class="headerlink" href="#using-a-fork" title="Permanent link">&para;</a></h3>
 <p>If you are integrating your own forks of the Readium modules, you will need to migrate them to a single fork and port your changes. Follow strictly the given steps and it should go painlessly.</p>
 <ol>
 <li>Upgrade your forks to the latest Readium 2.1.0 version from the legacy repositories, as you would with any update. The 2.1.0 version is available on both the legacy repositories and the new <code>kotlin-toolkit</code> one. It will be used to port your changes over to the single repository.</li>
 <li><a href="https://github.com/readium/kotlin-toolkit/fork">Fork the new <code>kotlin-toolkit</code> repository</a> on your own GitHub space.</li>
-<li>
-<p>In a new local directory, clone your legacy forks as well as the new single fork:
-    ```sh
-    mkdir readium-migration
-    cd readium-migration</p>
-<h1 id="clone-the-legacy-forks">Clone the legacy forks<a class="headerlink" href="#clone-the-legacy-forks" title="Permanent link">&para;</a></h1>
-<p>git clone https://github.com/USERNAME/r2-shared-kotlin.git
+<li>In a new local directory, clone your legacy forks as well as the new single fork:
+    <div class="highlight"><pre><span></span><code>mkdir readium-migration
+<span class="nb">cd</span> readium-migration
+
+<span class="c1"># Clone the legacy forks</span>
+git clone https://github.com/USERNAME/r2-shared-kotlin.git
 git clone https://github.com/USERNAME/r2-streamer-kotlin.git
 git clone https://github.com/USERNAME/r2-navigator-kotlin.git
 git clone https://github.com/USERNAME/r2-opds-kotlin.git
-git clone https://github.com/USERNAME/r2-lcp-kotlin.git</p>
-<h1 id="clone-the-new-single-fork">Clone the new single fork<a class="headerlink" href="#clone-the-new-single-fork" title="Permanent link">&para;</a></h1>
-<p>git clone https://github.com/USERNAME/kotlin-toolkit.git
-<code>4. Reset the new fork to be in the same state as the 2.1.0 release.</code>sh
-cd kotlin-toolkit
-git reset --hard 2.1.0
-<code>5. For each Readium module, port your changes over to the new fork.</code>sh
-rm -rf readium/*/src</p>
-<p>cp -r ../r2-shared-kotlin/r2-shared/src readium/shared
+git clone https://github.com/USERNAME/r2-lcp-kotlin.git
+
+<span class="c1"># Clone the new single fork</span>
+git clone https://github.com/USERNAME/kotlin-toolkit.git
+</code></pre></div></li>
+<li>Reset the new fork to be in the same state as the 2.1.0 release.
+    <div class="highlight"><pre><span></span><code><span class="nb">cd</span> kotlin-toolkit
+git reset --hard <span class="m">2</span>.1.0
+</code></pre></div></li>
+<li>For each Readium module, port your changes over to the new fork.
+    <div class="highlight"><pre><span></span><code>rm -rf readium/*/src
+
+cp -r ../r2-shared-kotlin/r2-shared/src readium/shared
 cp -r ../r2-streamer-kotlin/r2-streamer/src readium/streamer
 cp -r ../r2-navigator-kotlin/r2-navigator/src readium/navigator
 cp -r ../r2-opds-kotlin/r2-opds/src readium/opds
 cp -r ../r2-lcp-kotlin/r2-lcp/src readium/lcp
-<code>6. Review your changes, then commit.</code>sh
-git add readium
-git commit -m "Apply local changes to Readium"
-<code>7. Finally, pull the changes to upgrade to the latest version of the fork. You might need to fix some conflicts.</code>sh
-git pull --rebase
+</code></pre></div></li>
+<li>Review your changes, then commit.
+    <div class="highlight"><pre><span></span><code>git add readium
+git commit -m <span class="s2">&quot;Apply local changes to Readium&quot;</span>
+</code></pre></div></li>
+<li>Finally, pull the changes to upgrade to the latest version of the fork. You might need to fix some conflicts.
+    <div class="highlight"><pre><span></span><code>git pull --rebase
 git push
-```</p>
-</li>
+</code></pre></div></li>
 </ol>
 <p>Your fork is now ready! To integrate it in your app as a local Git clone or submodule, follow the instructions from the <a href="../README.md">README</a>.</p>
 <h2 id="200"><a href="https://github.com/readium/r2-testapp-kotlin/compare/2.2.0-beta.2...2.2.0">2.0.0</a><a class="headerlink" href="#200" title="Permanent link">&para;</a></h2>
@@ -531,18 +1911,16 @@ git push
 <p>Find all the changes made in the test app related to LCP <a href="https://github.com/readium/r2-testapp-kotlin/pull/379/files">in PR #379</a>.</p>
 <h4 id="replacing-orgjodatimedatetime-with-javautildate">Replacing <code>org.joda.time.DateTime</code> with <code>java.util.Date</code><a class="headerlink" href="#replacing-orgjodatimedatetime-with-javautildate" title="Permanent link">&para;</a></h4>
 <p>We replaced all occurrences of Joda's <code>DateTime</code> with <code>java.util.Date</code> in <code>r2-lcp-kotlin</code>, to reduce the dependency on third-party libraries. You will need to update any code using <code>LcpLicense</code>. The easiest way would be to keep using Joda in your own app and create <code>DateTime</code> object from the <code>Date</code> ones. For example:</p>
-<div class="codehilite"><pre><span></span><code><span class="n">lcpLicense</span><span class="o">?.</span><span class="na">license</span><span class="o">?.</span><span class="na">issued</span><span class="o">?.</span><span class="na">let</span> <span class="p">{</span> <span class="n">DateTime</span><span class="p">(</span><span class="nb">it</span><span class="p">)</span> <span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="n">lcpLicense</span><span class="o">?.</span><span class="na">license</span><span class="o">?.</span><span class="na">issued</span><span class="o">?.</span><span class="na">let</span> <span class="p">{</span> <span class="n">DateTime</span><span class="p">(</span><span class="nb">it</span><span class="p">)</span> <span class="p">}</span>
 </code></pre></div>
-
 <h4 id="revamped-loan-renew-api">Revamped loan renew API<a class="headerlink" href="#revamped-loan-renew-api" title="Permanent link">&para;</a></h4>
 <p>The API to renew an LCP loan got revamped to better support renewal through a web page. You will need to implement <code>LcpLicense.RenewListener</code> to coordinate the UX interaction.</p>
 <h5 id="for-material-design-apps">For Material Design apps<a class="headerlink" href="#for-material-design-apps" title="Permanent link">&para;</a></h5>
 <p>If your application fits Material Design guidelines, you may use the provided <code>MaterialRenewListener</code> implementation directly. This will only work if your theme extends a <code>MaterialComponents</code> one, for example:</p>
-<div class="codehilite"><pre><span></span><code><span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">&quot;AppTheme&quot;</span> <span class="na">parent=</span><span class="s">&quot;Theme.MaterialComponents.Light.DarkActionBar&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">&quot;AppTheme&quot;</span> <span class="na">parent=</span><span class="s">&quot;Theme.MaterialComponents.Light.DarkActionBar&quot;</span><span class="nt">&gt;</span>
 </code></pre></div>
-
 <p><code>MaterialRenewListener</code> expects an <code>ActivityResultCaller</code> instance for argument. Any <code>ComponentActivity</code> or <code>Fragment</code> object can be used as <code>ActivityResultCaller</code>.</p>
-<div class="codehilite"><pre><span></span><code><span class="kd">val</span> <span class="nv">activity</span><span class="p">:</span> <span class="n">FragmentActivity</span>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span> <span class="nv">activity</span><span class="p">:</span> <span class="n">FragmentActivity</span>
 
 <span class="n">license</span><span class="p">.</span><span class="na">renewLoan</span><span class="p">(</span><span class="n">MaterialRenewListener</span><span class="p">(</span>
     <span class="n">license</span> <span class="o">=</span> <span class="n">lcpLicense</span><span class="p">,</span>
@@ -550,7 +1928,6 @@ git push
     <span class="n">fragmentManager</span> <span class="o">=</span> <span class="n">activity</span><span class="p">.</span><span class="na">supportFragmentManager</span>
 <span class="p">))</span>
 </code></pre></div>
-
 <h2 id="200-beta1"><a href="https://github.com/readium/r2-testapp-kotlin/compare/2.2.0-alpha.2...2.2.0-beta.1">2.0.0-beta.1</a><a class="headerlink" href="#200-beta1" title="Permanent link">&para;</a></h2>
 <p>The version 2.0.0-beta.1 is mostly stabilizing the new APIs and fixing existing bugs. We also upgraded the libraries to be compatible with Kotlin 1.4 and Gradle 4.1.</p>
 <h3 id="replacing-format-by-mediatype">Replacing <code>Format</code> by <code>MediaType</code><a class="headerlink" href="#replacing-format-by-mediatype" title="Permanent link">&para;</a></h3>
@@ -583,7 +1960,7 @@ git push
 <h4 id="opening-a-publication">Opening a Publication<a class="headerlink" href="#opening-a-publication" title="Permanent link">&para;</a></h4>
 <p>Call <code>Streamer::open()</code> to parse a publication. It will return a self-contained <code>Publication</code> model which handles metadata, resource access and DRM decryption. This means that <code>Container</code>, <code>PubBox</code> and <code>DRM</code> are not needed anymore, you can remove any reference from your app.</p>
 <p>The <code>allowUserInteraction</code> parameter should be set to <code>true</code> if you intend to render the parsed publication to the user. It will allow the Streamer to display interactive dialogs, for example to enter DRM credentials. You can set it to <code>false</code> if you're parsing a publication in a background process, for example during bulk import.</p>
-<div class="codehilite"><pre><span></span><code><span class="kd">val</span> <span class="nv">streamer</span> <span class="o">=</span> <span class="n">Streamer</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span> <span class="nv">streamer</span> <span class="o">=</span> <span class="n">Streamer</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
 
 <span class="kd">val</span> <span class="nv">publication</span> <span class="o">=</span> <span class="n">streamer</span><span class="p">.</span><span class="na">open</span><span class="p">(</span><span class="n">File</span><span class="p">(</span><span class="n">path</span><span class="p">),</span> <span class="n">allowUserInteraction</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span>
     <span class="p">.</span><span class="na">getOrElse</span> <span class="p">{</span> <span class="n">error</span> <span class="o">-&gt;</span>
@@ -591,14 +1968,12 @@ git push
         <span class="k">return</span>
     <span class="p">}</span>
 </code></pre></div>
-
 <h4 id="parsing-a-readium-web-publication-manifest">Parsing a Readium Web Publication Manifest<a class="headerlink" href="#parsing-a-readium-web-publication-manifest" title="Permanent link">&para;</a></h4>
 <p>You can't use <code>Publication.fromJSON()</code> to parse directly a manifest anymore. Instead, you can use <code>Manifest.fromJSON()</code>, which gives you access to the metadata embedded in the manifest.</p>
 <p>Then, if you really need a <code>Publication</code> model, you can build one yourself from the <code>Manifest</code> and optionally a <code>Fetcher</code> and Publication Services.</p>
-<div class="codehilite"><pre><span></span><code><span class="gd">-val publication = Publication.fromJSON(json)</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="gd">-val publication = Publication.fromJSON(json)</span><span class="w"></span>
 <span class="gi">+val publication = Manifest.fromJSON(json)?.let { Publication(it) }</span><span class="w"></span>
 </code></pre></div>
-
 <p>However, the best way to parse a RWPM is to use the <code>Streamer</code>, like with any other publication format. This way the <code>Publication</code> model will be initialized with appropriate <code>Fetcher</code> and Publication Services.</p>
 <h4 id="error-feedback">Error Feedback<a class="headerlink" href="#error-feedback" title="Permanent link">&para;</a></h4>
 <p>In case of failure, a <code>Publication.OpeningException</code> is returned. It implements <code>UserException</code> and can be used directly to present an error message to the user with <code>getUserMessage(Context)</code>.</p>
@@ -618,7 +1993,7 @@ git push
 <p>The test app used to have special cases for DiViNa and Audiobooks, by unpacking manually the ZIP archives. You should remove this code and streamline any resource access using <code>publication.get()</code>.</p>
 <h4 id="extracting-publication-covers">Extracting Publication Covers<a class="headerlink" href="#extracting-publication-covers" title="Permanent link">&para;</a></h4>
 <p>Extracting the cover of a publication for caching purposes can be done with a single call to <code>publication.cover()</code>, instead of reaching for a <code>Link</code> with <code>cover</code> relation. You can use <code>publication.coverFitting(Size)</code> to select the best resolution without exceeding a given size. It can be useful to avoid saving very large cover images.</p>
-<div class="codehilite"><pre><span></span><code><span class="gd">-val cover =</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="gd">-val cover =</span><span class="w"></span>
 <span class="gd">-    try {</span><span class="w"></span>
 <span class="gd">-        publication.coverLink</span><span class="w"></span>
 <span class="gd">-            ?.let { container.data(it.href) }</span><span class="w"></span>
@@ -629,24 +2004,21 @@ git push
 
 <span class="gi">+val cover = publication.coverFitting(Size(width = 100, height = 100))</span><span class="w"></span>
 </code></pre></div>
-
 <h3 id="observing-a-navigators-current-locator">Observing a Navigator's Current Locator<a class="headerlink" href="#observing-a-navigators-current-locator" title="Permanent link">&para;</a></h3>
 <p><code>Navigator::currentLocator</code> is now a <code>StateFlow</code> instead of <code>LiveData</code>, to better support chromeless navigators such as an audiobook navigator in the future.</p>
 <p>If you were observing <code>currentLocator</code> from an <code>Activity</code> or <code>Fragment</code>, you can continue to do so with <code>currentLocator.asLiveData()</code>.</p>
-<div class="codehilite"><pre><span></span><code><span class="gd">- navigator.currentLocator.observe(this, Observer { locator -&gt; })</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="gd">- navigator.currentLocator.observe(this, Observer { locator -&gt; })</span><span class="w"></span>
 <span class="gi">+ navigator.currentLocator.asLiveData().observe(this, Observer { locator -&gt; })</span><span class="w"></span>
 </code></pre></div>
-
 <p>If you access directly the value through <code>navigator.currentLocator.value</code>, you might need to add the following annotation to the enclosing class:</p>
-<div class="codehilite"><pre><span></span><code>@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)
+<div class="highlight"><pre><span></span><code>@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)
 </code></pre></div>
-
 <p>Despite being still experimental, <code>StateFlow</code> <a href="https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-state-flow/#not-stable-for-inheritance">is deemed stable for use</a>.</p>
 <h3 id="lcp-and-other-drms">LCP and Other DRMs<a class="headerlink" href="#lcp-and-other-drms" title="Permanent link">&para;</a></h3>
 <h4 id="opening-an-lcp-protected-publication">Opening an LCP Protected Publication<a class="headerlink" href="#opening-an-lcp-protected-publication" title="Permanent link">&para;</a></h4>
 <p>Support for LCP is now fully integrated with the <code>Streamer</code>, which means that you don't need to retrieve the LCP license and fill <code>container.drm</code> yourself after opening a <code>Publication</code> anymore.</p>
 <p>To enable the support for LCP in the <code>Streamer</code>, you need to initialize it with a <code>ContentProtection</code> implementation provided by <code>r2-lcp-kotlin</code>.</p>
-<div class="codehilite"><pre><span></span><code><span class="kd">val</span> <span class="nv">lcpService</span> <span class="o">=</span> <span class="n">LcpService</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span> <span class="nv">lcpService</span> <span class="o">=</span> <span class="n">LcpService</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
 <span class="kd">val</span> <span class="nv">streamer</span> <span class="o">=</span> <span class="n">Streamer</span><span class="p">(</span>
     <span class="n">context</span> <span class="o">=</span> <span class="n">context</span><span class="p">,</span>
     <span class="n">contentProtections</span> <span class="o">=</span> <span class="n">listOfNotNull</span><span class="p">(</span>
@@ -654,22 +2026,19 @@ git push
     <span class="p">)</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <p>Then, to prompt the user for their passphrase, you need to set <code>allowUserInteraction</code> to <code>true</code> and provide the instance of the hosting <code>Activity</code>, <code>Fragment</code> or <code>View</code> with the <code>sender</code> parameter when opening the publication.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">streamer</span><span class="p">.</span><span class="na">open</span><span class="p">(</span><span class="n">File</span><span class="p">(</span><span class="n">path</span><span class="p">),</span> <span class="n">allowUserInteraction</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="n">sender</span> <span class="o">=</span> <span class="n">activity</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">streamer</span><span class="p">.</span><span class="na">open</span><span class="p">(</span><span class="n">File</span><span class="p">(</span><span class="n">path</span><span class="p">),</span> <span class="n">allowUserInteraction</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="n">sender</span> <span class="o">=</span> <span class="n">activity</span><span class="p">)</span>
 </code></pre></div>
-
 <p>Alternatively, if you already have the passphrase, you can pass it directly to the <code>credentials</code> parameter. If it's valid, the user won't be prompted.</p>
 <h4 id="customizing-the-passphrase-dialog">Customizing the Passphrase Dialog<a class="headerlink" href="#customizing-the-passphrase-dialog" title="Permanent link">&para;</a></h4>
 <p>The LCP Service now ships with a default passphrase dialog. You can remove the former implementation from your app if you copied it from the test app. But if you still want to use a custom implementation of <code>LcpAuthenticating</code>, for example to have a different layout, you can pass it when creating the <code>ContentProtection</code>.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">lcpService</span><span class="p">.</span><span class="na">contentProtection</span><span class="p">(</span><span class="n">CustomLCPAuthentication</span><span class="p">())</span>
+<div class="highlight"><pre><span></span><code><span class="n">lcpService</span><span class="p">.</span><span class="na">contentProtection</span><span class="p">(</span><span class="n">CustomLCPAuthentication</span><span class="p">())</span>
 </code></pre></div>
-
 <h4 id="presenting-a-protected-publication-with-a-navigator">Presenting a Protected Publication with a Navigator<a class="headerlink" href="#presenting-a-protected-publication-with-a-navigator" title="Permanent link">&para;</a></h4>
 <p>In case the credentials were incorrect or missing, the <code>Streamer</code> will still return a <code>Publication</code>, but in a "restricted" state. This allows reading apps to import publications by accessing their metadata without having the passphrase.</p>
 <p>But if you need to present the publication with a Navigator, you will need to first check if the <code>Publication</code> is not restricted.</p>
 <p>Besides missing credentials, a publication can be restricted if the Content Protection returned an error, for example when the publication is expired. In which case, you must display the error to the user by checking the presence of a <code>publication.protectionError</code>.</p>
-<div class="codehilite"><pre><span></span><code><span class="k">if</span> <span class="p">(</span><span class="n">publication</span><span class="p">.</span><span class="na">isRestricted</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="p">(</span><span class="n">publication</span><span class="p">.</span><span class="na">isRestricted</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">publication</span><span class="p">.</span><span class="na">protectionError</span><span class="o">?.</span><span class="na">let</span> <span class="p">{</span> <span class="n">error</span> <span class="o">-&gt;</span>
         <span class="c1">// A status error occurred, for example the publication expired</span>
         <span class="n">alert</span><span class="p">(</span><span class="n">error</span><span class="p">.</span><span class="na">getUserMessage</span><span class="p">(</span><span class="n">context</span><span class="p">))</span>
@@ -678,7 +2047,6 @@ git push
     <span class="n">presentNavigator</span><span class="p">(</span><span class="n">publication</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h4 id="accessing-an-lcp-license-information">Accessing an LCP License Information<a class="headerlink" href="#accessing-an-lcp-license-information" title="Permanent link">&para;</a></h4>
 <p>To check if a publication is protected with a known DRM, you can use <code>publication.isProtected</code>.</p>
 <p>If you need to access an LCP license's information, you can use the helper <code>publication.lcpLicense</code>, which will return the <code>LcpLicense</code> if the publication is protected with LCP and the passphrase was known. Alternatively, you can use <code>LcpService::retrieveLicense()</code> as before.</p>
@@ -690,35 +2058,31 @@ git push
 <h3 id="introducing-try">Introducing <code>Try</code><a class="headerlink" href="#introducing-try" title="Permanent link">&para;</a></h3>
 <p>A few of the new APIs are returning a <code>Try</code> object, which is similar to the <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/">native <code>Result</code> type</a>. We decided to go for this opiniated approach for error handling instead of throwing <code>Exception</code> because of the type-safety it brings and the constraint on reading apps to properly handle error cases.</p>
 <p>You can revert to traditional exceptions by calling <code>getOrThrow()</code> on the <code>Try</code> instance, but the most convenient way to handle the error would be to use <code>getOrElse()</code>.</p>
-<div class="codehilite"><pre><span></span><code><span class="kd">val</span> <span class="nv">publication</span> <span class="o">=</span> <span class="n">streamer</span><span class="p">.</span><span class="na">open</span><span class="p">(</span><span class="n">File</span><span class="p">(</span><span class="n">path</span><span class="p">),</span> <span class="n">allowUserInteraction</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span> <span class="nv">publication</span> <span class="o">=</span> <span class="n">streamer</span><span class="p">.</span><span class="na">open</span><span class="p">(</span><span class="n">File</span><span class="p">(</span><span class="n">path</span><span class="p">),</span> <span class="n">allowUserInteraction</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span>
     <span class="p">.</span><span class="na">getOrElse</span> <span class="p">{</span> <span class="n">error</span> <span class="o">-&gt;</span>
         <span class="n">alert</span><span class="p">(</span><span class="n">error</span><span class="p">.</span><span class="na">getUserMessage</span><span class="p">(</span><span class="n">context</span><span class="p">))</span>
         <span class="k">return</span>
     <span class="p">}</span>
 </code></pre></div>
-
 <p><code>Try</code> also supports <code>map()</code> and <code>flatMap()</code> which are useful to transform the result while forwarding any error handling to upper layers.</p>
-<div class="codehilite"><pre><span></span><code><span class="kd">fun</span> <span class="nf">cover</span><span class="p">():</span> <span class="n">Try</span><span class="o">&lt;</span><span class="n">Bitmap</span><span class="p">,</span> <span class="n">ResourceException</span><span class="o">&gt;</span> <span class="o">=</span>
+<div class="highlight"><pre><span></span><code><span class="kd">fun</span> <span class="nf">cover</span><span class="p">():</span> <span class="n">Try</span><span class="o">&lt;</span><span class="n">Bitmap</span><span class="p">,</span> <span class="n">ResourceException</span><span class="o">&gt;</span> <span class="o">=</span>
     <span class="n">publication</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">coverLink</span><span class="p">)</span>
         <span class="p">.</span><span class="na">use</span> <span class="p">{</span> <span class="n">resource</span> <span class="o">-&gt;</span> <span class="n">resource</span><span class="p">.</span><span class="na">read</span><span class="p">()</span> <span class="p">}</span> <span class="c1">// &lt;- returns a Try&lt;ByteArray, ResourceException&gt;</span>
         <span class="p">.</span><span class="na">map</span> <span class="p">{</span> <span class="n">bytes</span> <span class="o">-&gt;</span> <span class="n">BitmapFactory</span><span class="p">.</span><span class="na">decodeByteArray</span><span class="p">(</span><span class="n">bytes</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="n">bytes</span><span class="p">.</span><span class="na">size</span><span class="p">)</span> <span class="p">}</span>
 </code></pre></div>
-
 <h3 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h3>
 <h4 id="attempt-to-invoke-virtual-method-androidcontentsharedpreferences-androidcontentcontextgetsharedpreferencesjavalangstring-int-on-a-null-object-reference">Attempt to invoke virtual method '<code>android.content.SharedPreferences android.content.Context.getSharedPreferences(java.lang.String, int)</code>' on a null object reference<a class="headerlink" href="#attempt-to-invoke-virtual-method-androidcontentsharedpreferences-androidcontentcontextgetsharedpreferencesjavalangstring-int-on-a-null-object-reference" title="Permanent link">&para;</a></h4>
 <p>Make sure you create the <code>LcpService</code> <em>after</em> <code>onCreate()</code> has been called on an <code>Activity</code>.</p>
 <h4 id="lcp-publications-are-blank-or-lcpl-are-not-imported">LCP publications are blank or LCPL are not imported<a class="headerlink" href="#lcp-publications-are-blank-or-lcpl-are-not-imported" title="Permanent link">&para;</a></h4>
 <p>Make sure you added the following to your app's <code>build.gradle</code>:</p>
-<div class="codehilite"><pre><span></span><code>implementation &quot;readium:liblcp:1.0.0@aar&quot;
+<div class="highlight"><pre><span></span><code>implementation &quot;readium:liblcp:1.0.0@aar&quot;
 </code></pre></div>
-
 <h4 id="lcp-publications-are-opening-but-not-decrypted">LCP publications are opening but not decrypted<a class="headerlink" href="#lcp-publications-are-opening-but-not-decrypted" title="Permanent link">&para;</a></h4>
 <p>Make sure you added the content protection to the Streamer, <a href="#opening-an-lcp-protected-publication">following these instructions</a>.</p>
 <h4 id="elcpdialogauthentication-no-valid-sender-was-passed-to-lcpdialogauthenticationretrievepassphrase-make-sure-it-is-an-activity-a-fragment-or-a-view">E/LcpDialogAuthentication: No valid [sender] was passed to <code>LcpDialogAuthentication::retrievePassphrase()</code>. Make sure it is an Activity, a Fragment or a View.<a class="headerlink" href="#elcpdialogauthentication-no-valid-sender-was-passed-to-lcpdialogauthenticationretrievepassphrase-make-sure-it-is-an-activity-a-fragment-or-a-view" title="Permanent link">&para;</a></h4>
 <p>To be able to present the LCP passphrase dialog, the default <code>LcpDialogAuthentication</code> needs a hosting view as context. You must provide it to the <code>sender</code> parameter of <code>Streamer::open()</code>.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">streamer</span><span class="p">.</span><span class="na">open</span><span class="p">(</span><span class="n">File</span><span class="p">(</span><span class="n">path</span><span class="p">),</span> <span class="n">allowUserInteraction</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="n">sender</span> <span class="o">=</span> <span class="n">activity</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">streamer</span><span class="p">.</span><span class="na">open</span><span class="p">(</span><span class="n">File</span><span class="p">(</span><span class="n">path</span><span class="p">),</span> <span class="n">allowUserInteraction</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="n">sender</span> <span class="o">=</span> <span class="n">activity</span><span class="p">)</span>
 </code></pre></div>
-
 <h4 id="illegalargumentexception-the-provided-publication-is-restricted-check-that-any-drm-was-properly-unlocked-using-a-content-protection">IllegalArgumentException: The provided publication is restricted. Check that any DRM was properly unlocked using a Content Protection.<a class="headerlink" href="#illegalargumentexception-the-provided-publication-is-restricted-check-that-any-drm-was-properly-unlocked-using-a-content-protection" title="Permanent link">&para;</a></h4>
 <p>Navigators will refuse to be opened if a publication is protected and not unlocked. You must check if a publication is not restricted by <a href="#presenting-a-protected-publication-with-a-navigator">following these instructions</a>.</p>
 <h2 id="200-alpha1">2.0.0-alpha.1<a class="headerlink" href="#200-alpha1" title="Permanent link">&para;</a></h2>
@@ -753,21 +2117,19 @@ git push
 <li><a href="https://github.com/readium/r2-testapp-kotlin/commit/e79e9aa31a1f1b6516cd733ec9c5be7772923e00#diff-a6a819ecd51536fea64e4ab0a85b58eeL76-L87">Remove any overrides of <code>currentLocation</code></a>.</li>
 <li><a href="https://github.com/readium/r2-testapp-kotlin/commit/0f6137ff42d37f094c8de53abb982bdf1f2a0248#diff-330266947fef09416118fea00ffbfdf9R72-R75">Restore the last location from your database in <code>onCreate()</code></a>, for example with something similar to:</li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="c1">// Restores the last read location</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// Restores the last read location</span>
 <span class="n">bookRepository</span><span class="p">.</span><span class="na">lastLocatorOfBook</span><span class="p">(</span><span class="n">bookId</span><span class="p">)</span><span class="o">?.</span><span class="na">let</span> <span class="p">{</span> <span class="n">locator</span> <span class="o">-&gt;</span>
     <span class="n">go</span><span class="p">(</span><span class="n">locator</span><span class="p">,</span> <span class="n">animated</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h4 id="observing-the-current-location">Observing the Current Location<a class="headerlink" href="#observing-the-current-location" title="Permanent link">&para;</a></h4>
 <p><code>NavigatorDelegate.locationDidChange()</code> is now deprecated in favor of the more idiomatic <code>Navigator.currentLocator: LiveData&lt;Locator?&gt;</code>.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">currentLocator</span><span class="p">.</span><span class="na">observe</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="n">Observer</span> <span class="p">{</span> <span class="n">locator</span> <span class="o">-&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="n">currentLocator</span><span class="p">.</span><span class="na">observe</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="n">Observer</span> <span class="p">{</span> <span class="n">locator</span> <span class="o">-&gt;</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">locator</span> <span class="o">!=</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">bookRepository</span><span class="p">.</span><span class="na">saveLastLocatorOfBook</span><span class="p">(</span><span class="n">bookId</span><span class="p">,</span> <span class="n">locator</span><span class="p">)</span>
     <span class="p">}</span>
 <span class="p">})</span>
 </code></pre></div>
-
 <h3 id="publication"><code>Publication</code><a class="headerlink" href="#publication" title="Permanent link">&para;</a></h3>
 <ul>
 <li>A new <a href="https://github.com/readium/architecture/tree/master/models/locators/positions">Positions List</a> feature was added to provide a list of discrete locations in a publication. It can be used to implement an approximation of page numbers. This replaces the existing <code>R2SyntheticPageList</code>, which should be removed from your codebase.</li>
@@ -792,7 +2154,7 @@ git push
 </ul>
 </li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="kd">class</span> <span class="nc">Bookmark</span><span class="p">(...)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">Bookmark</span><span class="p">(...)</span> <span class="p">{</span>
 
     <span class="kd">val</span> <span class="nv">locator</span> <span class="k">get</span><span class="p">()</span> <span class="o">=</span> <span class="n">Locator</span><span class="p">(</span>
         <span class="n">href</span> <span class="o">=</span> <span class="n">resourceHref</span><span class="p">,</span>
@@ -804,14 +2166,13 @@ git push
 
 <span class="p">}</span>
 </code></pre></div>
-
 <h3 id="server"><code>Server</code><a class="headerlink" href="#server" title="Permanent link">&para;</a></h3>
 <p>The CSS, JavaScript and fonts injection in the <code>Server</code> was refactored to reduce the risk of collisions and simplify your codebase. <strong>This is a breaking change</strong>, <a href="https://github.com/readium/r2-testapp-kotlin/pull/321/files#diff-9bb6ad21df8b48f171ba6266616662ac">to upgrade your app you need to</a>:</p>
 <ul>
 <li>Provide the application's <code>Context</code> when creating a <code>Server</code>.</li>
 <li>Remove the following injection statements, which are now handled directly by the Streamer:</li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="n">server</span><span class="p">.</span><span class="na">loadCustomResource</span><span class="p">(</span><span class="n">assets</span><span class="p">.</span><span class="na">open</span><span class="p">(</span><span class="s">&quot;scripts/crypto-sha256.js&quot;</span><span class="p">),</span> <span class="s">&quot;crypto-sha256.js&quot;</span><span class="p">,</span> <span class="n">Injectable</span><span class="p">.</span><span class="na">Script</span><span class="p">)</span>   
+<div class="highlight"><pre><span></span><code><span class="n">server</span><span class="p">.</span><span class="na">loadCustomResource</span><span class="p">(</span><span class="n">assets</span><span class="p">.</span><span class="na">open</span><span class="p">(</span><span class="s">&quot;scripts/crypto-sha256.js&quot;</span><span class="p">),</span> <span class="s">&quot;crypto-sha256.js&quot;</span><span class="p">,</span> <span class="n">Injectable</span><span class="p">.</span><span class="na">Script</span><span class="p">)</span>   
 <span class="n">server</span><span class="p">.</span><span class="na">loadCustomResource</span><span class="p">(</span><span class="n">assets</span><span class="p">.</span><span class="na">open</span><span class="p">(</span><span class="s">&quot;scripts/highlight.js&quot;</span><span class="p">),</span> <span class="s">&quot;highlight.js&quot;</span><span class="p">,</span> <span class="n">Injectable</span><span class="p">.</span><span class="na">Script</span><span class="p">)</span>
 </code></pre></div>
 
@@ -826,15 +2187,30 @@ git push
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
       
         
-        <a href="../readium/shared/" class="md-footer__link md-footer__link--next" aria-label="Next: Shared" rel="next">
+        <a href="../guides/navigator-preferences/" class="md-footer__link md-footer__link--next" aria-label="Next: Navigator preferences" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Shared
+              Navigator preferences
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -849,7 +2225,7 @@ git push
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2021 Readium Foundation
+      Copyright &copy; 2022 Readium Foundation
     </div>
   
   
@@ -871,7 +2247,7 @@ git push
     <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.6e54b5cd.min.js"></script>
+      <script src="../assets/javascripts/bundle.748e2769.min.js"></script>
       
     
   </body>
